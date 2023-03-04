@@ -322,7 +322,7 @@ def import_records(thefile,theformat):
     # Build SELECT statement using the column format info
     select_columns = ""
     for c in format_info:
-        select_columns += f"\n substr(column0,{c[1]},{c[2]-c[1]+1}) as {c[0]}, "
+        select_columns += f"\n trim(substr(column0,{c[1]},{c[2]-c[1]+1})) as {c[0]}, "
 
     select_columns = select_columns.strip(', ') # Remove last, unneeded comma
 

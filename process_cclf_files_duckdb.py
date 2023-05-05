@@ -8,7 +8,7 @@ def main():
 # ==============================================================================
 # OPTIONS AND FILE FORMAT SETTINGS
 
-# SQLite database file name
+# DuckDB database file name
 DBNAME = 'cclf_data.duckdb'
 
 # Establish SQLite Database connection
